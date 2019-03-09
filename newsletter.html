@@ -1,0 +1,23 @@
+<form action="https://www.powermaxfitness.net/Home.html" name="sub_newsletter" id="sub_newsletter" method="post" class="form-horizontal" role="form" accept-charset="utf-8">
+	<input type="hidden" name="action_type" value="subscribe_newsletter" />
+	<div class="form-group">
+		<input type="email" name="email" id="email" class="form-control" placeholder="Email Address"  required >
+		<p id="subscribe_message"></p>
+		<button type="submit" class="newssub"> Subscribe</button>
+	</div>
+</form>  
+<script type="text/javascript">
+$("#sub_newsletter").on("submit", function(e){
+	e.preventDefault();
+	$.ajax({
+   url: $(this).attr("action"),
+		type: 'post',
+		data: $(this).serialize(),
+		success : function (response){
+			response = JSON.parse(response);
+			$("#subscribe_message").text(response.message);
+			$("#email").val("");
+		}
+	});
+});
+</script>
