@@ -1,10 +1,42 @@
-<?php echo "hii"; ?><br/>
+create new floder name
+touch index.html
+touch app.js
+enter index.html word
+git init
+git config --global user.name 'test'
+git config --global user.email 'test@gmail.com'
+git add index.html
+git status
 
-<?php echo '123456'; ?><br/>
+git rm --cached index.html
+git status
 
-<?php 
-echo '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>'; ?><br/>
-						
-						
+git add *.html
+git status
+git rm --cached index.html
+
+git commit
+Esc
+:wq
+
+
+gi log
+
+
+-----------------
+
+
+git config --global user.name 'test'
+git config --global user.email 'test@gmail.com'
+git init projectname
+cd projectname
+create file
+git add file.txt
+git commit -m"my first commit"
+
+
+=============
+
+git add .
+git commit -m 'lll'
 
