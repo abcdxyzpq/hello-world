@@ -1,3 +1,5 @@
+mani
+
 create new floder name
 touch index.html
 touch app.js
